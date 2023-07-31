@@ -210,7 +210,8 @@ if is_accelerate_available():
 if TYPE_CHECKING:
     import optuna
 
-logger = logging.get_logger(__name__)
+# logger = logging.get_logger(__name__)
+from .logger import logger
 
 
 # Name of the files used for checkpointing
